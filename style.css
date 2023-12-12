@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Signika+Negative:wght@700&display=swap');
+body {
+	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Signika Negative', sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background-image: linear-gradient(to left bottom, #480029, #430833, #3c113d, #331944, #271f4a, #1b254d, #0e294e, #002d4d, #003149, #003342, #02353a, #153634);
+}
+
+.parent {
+	display: grid;
+	grid-template-columns: repeat(5, 20%);
+	grid-template-rows: repeat(5, 20%);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	height: 100vh;
+}
+
+.div1,
+.div2,
+.div3,
+.div4 {
+	position: relative;
+	overflow: auto;
+	padding: 10px;
+}
+
+.div1 {
+	grid-area: 1 / 1 / 5 / 4;
+	border-radius: 10px;
+	background-image: linear-gradient(to right top, #5a0d39, #571c49, #512856, #493361, #403d6a, #344672, #264e77, #15567a, #005f7c, #00677b, #006f76, #00766f);
+}
+
+.div2 {
+	grid-area: 5 / 1 / 6 / 4;
+	border-radius: 10px;
+	background-image: linear-gradient(to right top, #9a1d69, #b54681, #d07296, #e69cab, #f2b5b8, #fbbdb7, #fdd9c4, #ffebe2, #fffee8, #fbffef, #f6ffe5, #f0ffd9);
+}
+
+.div3 {
+	grid-area: 1 / 4 / 5 / 6;
+	border-radius: 10px;
+	display: flex;
+	/*		background-image: linear-gradient(to right top, #1f244b, #2c3a60, #375073, #416786, #4a7d99, #5493aa, #5ea9bb, #68bfc9, #7dd1d6, #93e0e2, #abecef, #c2f6f9);*/
+}
+
+.div4 {
+	grid-area: 5 / 4 / 9 / 6;
+	border-radius: 10px;
+	background-image: linear-gradient(to right top, #63143f, #65204f, #672b5e, #69376d, #6b427c, #6e5289, #717298, #7581a6, #7891b3, #7ea1bf, #83b0cb, #89bed6);
+}
+
+.container {
+	color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+/*	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+	text-align: center;
+}
+
+h1 {
+	color: #333;
+}
+
+input {
+	padding: 8px;
+	margin-right: 8px;
+}
+
+button {
+	padding: 8px;
+	cursor: pointer;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+li {
+	background-color: #e0e0e0;
+	padding: 10px;
+	margin: 8px 0;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+/* Style the "Delete" and "Edit" buttons */
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+
+/* Style the "Delete" button with a different color */
+.delete-button {
+    background-color: #f44336;
+}
+
+/* Change color on hover for the "Delete" button */
+.delete-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Position the "Delete" and "Edit" buttons to the right */
+button {
+    position: absolute;
+    right: 50px;
+	
+}
+
+/* Adjust the space between the buttons */
+button + button {
+	position: relative;
+    margin-left: auto;
+    margin-right: 28px;
+	justify-content: space-between;
+}
+
+
+.time {
+	font-size: 104px;
+	padding: 20px;
+}
+
+.date {
+	font-size: 70px;
+	padding: 30px;
+	text-align: center;
+}
+
+.hour,
+.minute,
+.second,
+.day,
+.month,
+.year,
+.amPm {
+	padding: 5px;
+	margin: 0 2px;
+	background-color: #ddd;
+	border-radius: 3px;
+}
+
+
+/* Style each time and date component separately */
+
+.hour {
+	background-color: #ffa07a;
+	font-size: 194px;
+}
+
+.minute {
+	background-color: #98fb98;
+	font-size: 194px;
+}
+
+.second {
+	background-color: #add8e6;
+	position: relative;
+	top: -82px;
+}
+
+.amPm {
+	background-color: #ffcc00;
+	position: relative;
+	top: -98px;
+	right: 45px;
+	float: right;
+	font-size: 74px;
+}
+
+.day {
+	background-color: #ffd700;
+}
+
+.month {
+	background-color: #87cefa;
+}
+
+.year {
+	background-color: #ff6347;
+}
+
+.weekday {
+	padding: 5px;
+	margin: 0 2px;
+	background-color: #ddd;
+	border-radius: 3px;
+	background-color: #ff4500;
+	/* Adjust the color as needed */
+}
+
+.completed {
+	text-decoration: line-through;
+	color: #808080;
+	/* or any color you prefer for completed tasks */
+}
+
+#quote-container {
+	margin-top: 20px;
+}
+
+#quote-text {
+	font-size: 28px;
+}
+
+#taskList {}
