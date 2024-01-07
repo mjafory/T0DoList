@@ -228,7 +228,7 @@ function displayQuote(quote) {
 }
 
 // Get a new quote every hour (3600000 milliseconds)
-setInterval(getRandomQuote, 3000);
+setInterval(getRandomQuote, 360000);
 
 // Initial call to get a quote immediately when the page loads
 getRandomQuote();
