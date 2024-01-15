@@ -232,3 +232,18 @@ setInterval(getRandomQuote, 360000);
 
 // Initial call to get a quote immediately when the page loads
 getRandomQuote();
+
+
+
+
+// script.js
+document.addEventListener("DOMContentLoaded", function () {
+    // Attach event listener to the task input
+    var taskInput = document.getElementById("taskInput");
+    taskInput.addEventListener("keyup", function (event) {
+        if (event.key === "Enter") {
+            addTask();
+        }
+    });
+});
+
