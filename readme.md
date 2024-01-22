@@ -18,7 +18,12 @@
 ### Random Quote Display
 
 - The application fetches a random quote from a JSON file (`data.json`) using the Fetch API.
-- The quote is displayed on the webpage and updates every hour.
+- The quote is displayed on the webpage and updates every 5 mini.
+
+### Weather forecast
+
+- Fetches a day weather forecast using the [Open Meteo API](https://open-meteo.com/).
+- The Open-Meteo APIs are free for non-commercial usage. Please be mindful that user daily requests remain below 10,000. In addition, Open-Meteo has the right to restrict programs and IP addresses that abuse our service.
 
 ### User Interaction
 

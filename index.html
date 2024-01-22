@@ -5,12 +5,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>InspireTask</title>
-	<link rel="stylesheet" href="style.css"> </head>
+	<link rel="stylesheet" href="style.css">
+
+
+</head>
 
 <body>
 	<div class="parent">
-		<div class="div1" style=""> <span class="todo">	<input type="text" id="taskInput" placeholder="Enter task">
-			<button onclick="addTask()">Add Task</button>
+		<div class="div1" style=""> <span class="todo"> <input type="text" id="taskInput" placeholder="Enter task">
+				<button onclick="addTask()">Add Task</button>
 			</span>
 			<br>
 			<br>
@@ -24,10 +27,16 @@
 -->
 		<div class="div3">
 			<center>
-				<div class="time"> <span class="hour" id="hour"></span> <span class="minute" id="minute"></span> <span class="second" id="second"></span> <span class="amPm" id="amPm"></span> </div>
-				<div class="date"> <span class="day" id="day"></span> <span class="month" id="month"></span> <span class="year" id="year"></span> <span class="weekday" id="weekday"></span> </div>
-				<div id="ww_dfd312308372e" v='1.3' loc='auto' a='{"t":"responsive","lang":"en","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"fahrenheit","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_tof":"3"}'>More forecasts: <a href="https://oneweather.org/london/30_days/" id="ww_dfd312308372e_u" target="_blank">oneweather.org</a></div>
-				<script async src="https://app2.weatherwidget.org/js/?id=ww_dfd312308372e"></script>
+				<div class="time"> <span class="hour" id="hour"></span> <span class="minute" id="minute"></span> <span class="second" id="secondAmPm"></span> </div>
+				<div class="date"> <span class="month" id="month"></span> <span class="day" id="day"></span> <span class="year" id="year"></span> <span class="weekday" id="weekday"></span> </div>
+				<div id="weather-container">
+					<span id="temperature">Loading...</span>
+					<p id="loading">Fetching data from Open Meteo API</p>
+					<!--
+					<hr>
+					<p style="color: white;font-size: 3vw;padding: 0px;margin: 0px">Temperature</p>
+-->
+				</div>
 			</center>
 		</div>
 		<div class="div4">
@@ -40,6 +49,7 @@
 		</div>
 	</div>
 	<footer> 2023 @ Magfur </footer>
+	<span class="github"> <a href="https://github.com/mjafory/T0DoList">Github</a> </span>
 	<script src="script.js"></script>
 
 </body>
