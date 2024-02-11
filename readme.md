@@ -39,6 +39,6 @@
 
 ## Desktop app
 
-1. Download the [app.exe](https://github.com/mjafory/T0DoList/blob/main/desktop%20app/app.exe) file.
+1. Download the [app.exe](https://github.com/mjafory/T0DoList/raw/main/desktop%20app/app.exe) file.
 2. Run `app.exe`.
 3. The app will open in a standalone window.
