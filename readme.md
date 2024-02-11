@@ -37,12 +37,8 @@
 - Delete and Edit buttons are styled with specific colors and hover effects.
 - Time and date elements are styled and updated every second.
 
-## How to Use
+## Desktop app
 
-1. Clone the repository.
-2. Open the `index.html` file in a web browser.
-
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+1. Download the `app.exe` file from the releases.
+2. Run `app.exe`.
+3. The app will open in a standalone window.

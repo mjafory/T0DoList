@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>InspireTask</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+
+
+</head>
+
+<body>
+	<div class="parent">
+		<div class="div1" style=""> <span class="todo"> <input type="text" id="taskInput" placeholder="Enter task">
+				<button onclick="addTask()">Add Task</button>
+			</span>
+			<br>
+			<br>
+			<br>
+			<ul id="taskList"></ul>
+		</div>
+		<!--
+		<div class="div2">
+
+		</div>
+-->
+		<div class="div3">
+			<center>
+				<div class="time"> <span class="hour" id="hour"></span> <span class="minute" id="minute"></span> <span class="second" id="secondAmPm"></span> </div>
+				<div class="date"> <span class="month" id="month"></span> <span class="day" id="day"></span> <span class="year" id="year"></span> <span class="weekday" id="weekday"></span> </div>
+				<div id="weather-container">
+					<span id="temperature">Loading...</span>
+					<p id="loading">Fetching data from Open Meteo API</p>
+					<!--
+					<hr>
+					<p style="color: white;font-size: 3vw;padding: 0px;margin: 0px">Temperature</p>
+-->
+				</div>
+			</center>
+		</div>
+		<div class="div4">
+			<div class="container">
+				<!--				<h1>Random Quotes</h1>-->
+				<div id="quote-container">
+					<p id="quote-text"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer> Build by Magfur </footer>
+			<span class="refresh" id="refreshButton" onclick="getRandomQuote()">↺ Quote</span>
+	<span class="github"> <a href="https://github.com/mjafory/T0DoList">Github</a> </span>
+	<script src="{{ url_for('static', filename='script.js') }}" defer></script>
+	    <script>
+        // Pass the URL as a data attribute
+        var jsonUrl = '{{ url_for('static', filename='data.json') }}';
+    </script>
+</body>
+
+</html>

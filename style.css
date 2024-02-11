@@ -9,7 +9,13 @@ body {
 	background-image: linear-gradient(to left bottom, #480029, #430833, #3c113d, #331944, #271f4a, #1b254d, #0e294e, #002d4d, #003149, #003342, #02353a, #153634);
 	display: block;
 	/* or any other styles you want for non-mobile */
+
+	filter: contrast(120%);
+
+	transition: background-color 0.5s ease;
 }
+
+
 
 /* Media query to hide the div on screens with a maximum width of 767px (adjust as needed) */
 @media (max-width: 1200px) {
@@ -105,6 +111,7 @@ input {
 	width: 50vh;
 	border: none;
 	border-radius: 5px;
+	box-shadow: 10px 0px 20px 0px black;
 }
 
 
@@ -126,11 +133,12 @@ li {
 
 /* Style the "Delete" and "Edit" buttons */
 button {
-	background-color: #4caf50;
+	background-color: black;
 	color: white;
 	border: none;
 	padding: 8px 12px;
 	cursor: pointer;
+	box-shadow: 10px 0px 20px 0px black;
 	border-radius: 4px;
 	font-size: 14px;
 }
@@ -460,6 +468,31 @@ footer {
 	background-color: black;
 	padding: 10px;
 	border-radius: 10px;
+}
+
+.darkmode {
+	position: absolute;
+	bottom: 160px;
+	right: 10px;
+	color: black;
+	background-color: gold;
+	padding: 10px;
+	border-radius: 10px;
+	text-decoration: none;
+	z-index: 111;
+}
+
+.refresh {
+	position: absolute;
+	bottom: 160px;
+	right: 30px;
+	color: white;
+	background-color: purple;
+	padding: 10px;
+	border-radius: 10px;
+	text-decoration: none;
+	z-index: 111;
+	cursor: pointer;
 }
 
 .github a {
